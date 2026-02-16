@@ -6,8 +6,8 @@ export const personalInfo = {
   location: "India",
   resumeUrl: "/resume.pdf",
   social: {
-    linkedin: "https://linkedin.com/in/amankumar",
-    github: "https://github.com/amankumar",
+    linkedin: "https://www.linkedin.com/in/aman-kumar-784245312/",
+    github: "https://github.com/Amankumar0987",
     twitter: "https://twitter.com/amankumar",
   },
 }
