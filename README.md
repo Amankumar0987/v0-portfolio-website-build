@@ -11,16 +11,13 @@ This repository will stay in sync with your deployed chats on [v0.app](https://v
 Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
 
 ## Deployment
-
-Your project is live at:
-
-**[https://vercel.com/amankumar00892-8552s-projects/v0-portfolio-website-build](https://vercel.com/amankumar00892-8552s-projects/v0-portfolio-website-build)**
+https://v0-portfolio-website-build-jet-nu.vercel.app/
 
 ## Build your app
 
 Continue building your app on:
 
-**[https://v0.app/chat/oYTUhVq33SF](https://v0.app/chat/oYTUhVq33SF)**
+**(https://v0-portfolio-website-build-jet-nu.vercel.app/)**
 
 ## How It Works
 
