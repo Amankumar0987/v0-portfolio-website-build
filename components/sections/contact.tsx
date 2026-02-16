@@ -142,91 +142,95 @@ export function ContactSection() {
               transition={{ delay: 0.6, duration: 0.5 }}
             >
               <form
-                action="https://https://formspree.io/f/xpqjrdqw"
+                action="https://formspree.io/f/xpqjrdqw"
                 method="POST"
                 className="space-y-6"
               >
-              </>
-              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="name">Name</Label>
+                    <Input
+                      id="name"
+                      name="name"
+                      placeholder="Your name"
+                      required
+                      className="rounded-lg"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email</Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="your@email.com"
+                      required
+                      className="rounded-lg"
+                    />
+                  </div>
+                </div>
+
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
+                  <Label htmlFor="linkedin">LinkedIn URL (optional)</Label>
                   <Input
-                    id="name"
-                    placeholder="Your name"
-                    required
+                    id="linkedin"
+                    name="linkedin"
+                    type="url"
+                    placeholder="https://linkedin.com/in/..."
                     className="rounded-lg"
                   />
                 </div>
+
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="github">GitHub URL (optional)</Label>
                   <Input
-                    id="email"
-                    type="email"
-                    placeholder="your@email.com"
-                    required
+                    id="github"
+                    name="github"
+                    type="url"
+                    placeholder="https://github.com/..."
                     className="rounded-lg"
                   />
                 </div>
-              </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="linkedin">LinkedIn URL (optional)</Label>
-                <Input
-                  id="linkedin"
-                  type="url"
-                  placeholder="https://linkedin.com/in/..."
-                  className="rounded-lg"
-                />
-              </div>
+                <div className="space-y-2">
+                  <Label htmlFor="message">Message</Label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tell me about your project or just say hi..."
+                    rows={5}
+                    required
+                    className="rounded-lg resize-none"
+                  />
+                </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="github">GitHub URL (optional)</Label>
-                <Input
-                  id="github"
-                  type="url"
-                  placeholder="https://github.com/..."
-                  className="rounded-lg"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message">Message</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Tell me about your project or just say hi..."
-                  rows={5}
-                  required
-                  className="rounded-lg resize-none"
-                />
-              </div>
-
-              <Button
-                type="submit"
-                size="lg"
-                className="w-full rounded-lg"
-                disabled={isSubmitting || isSubmitted}
-              >
-                {isSubmitting ? (
-                  <motion.span
-                    animate={{ opacity: [1, 0.5, 1] }}
-                    transition={{ duration: 1, repeat: Infinity }}
-                  >
-                    Sending...
-                  </motion.span>
-                ) : isSubmitted ? (
-                  <span>Message Sent!</span>
-                ) : (
-                  <>
-                    <Send className="w-4 h-4 mr-2" />
-                    Send Message
-                  </>
-                )}
-              </Button>
-            </form>
-          </motion.div>
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full rounded-lg"
+                  disabled={isSubmitting || isSubmitted}
+                >
+                  {isSubmitting ? (
+                    <motion.span
+                      animate={{ opacity: [1, 0.5, 1] }}
+                      transition={{ duration: 1, repeat: Infinity }}
+                    >
+                      Sending...
+                    </motion.span>
+                  ) : isSubmitted ? (
+                    <span>Message Sent!</span>
+                  ) : (
+                    <>
+                      <Send className="w-4 h-4 mr-2" />
+                      Send Message
+                    </>
+                  )}
+                </Button>
+              </form>
+            </motion.div>
+          </div>
         </div>
       </div>
-    </div>
     </section >
   )
 }
