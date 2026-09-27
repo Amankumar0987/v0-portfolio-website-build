@@ -54,7 +54,7 @@ export function HeroSection() {
           >
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
               <Image
-                src="/profile.jpg"
+                src="https://media.licdn.com/dms/image/v2/D5603AQGVuh02lD2H2Q/profile-displayphoto-crop_800_800/B56aAjpTzrHUAI-/0/1787304428178?e=1792022400&v=beta&t=th83EGTAvo0vKir8gdbTFVQS0dgjOrGhSh88al02mnk"
                 alt={personalInfo.name}
                 fill
                 className="object-cover"
