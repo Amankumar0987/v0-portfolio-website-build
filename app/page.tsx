@@ -7,10 +7,12 @@ import { ProjectsSection } from "@/components/sections/projects"
 import { CertificationsSection } from "@/components/sections/certifications"
 import { ContactSection } from "@/components/sections/contact"
 import { Footer } from "@/components/footer"
+import { ScrollBackground } from "@/components/background/scroll-background"
 
 export default function HomePage() {
   return (
     <main className="min-h-screen">
+      <ScrollBackground />
       <Navbar />
       <HeroSection />
       <AboutSection />
