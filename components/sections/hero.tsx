@@ -54,10 +54,11 @@ export function HeroSection() {
           >
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
               <Image
-                src="/profile.jpg"
+                src="/profile.png"
                 alt={personalInfo.name}
                 fill
-                className="object-cover"
+                sizes="(min-width: 768px) 160px, 128px"
+                className="object-cover object-top"
                 priority
               />
             </div>
